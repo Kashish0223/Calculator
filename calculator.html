@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+           background:linear-gradient(135deg,#16222a,#3a6073);
+        }
+        .container {
+            width: 250px;
+    height: 350px;
+    position: absolute;
+    left: 550px;
+    padding: 50px 20px 0px 20px;
+    border-radius: 10px;
+    background-color: rgb(106, 107, 110);
+    top: 150px;
+        }
+
+        .display{
+            width: 240px;
+            height: 50px;
+            border: 0;
+            outline: 0;
+            text-align: right;
+            font-size: 20px;
+            background-color: #f1ecec;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #918888;
+        }
+
+        .row2,
+        .row3,
+        .row4,
+        .row5 {
+            height: 50px;
+            margin: 10px 0px;
+            display: flex;
+        }
+
+        .r1,
+        .r2,
+        .r3,
+        .r4,
+        .r5 {
+            width: 50px;
+            margin: 5px 5px;
+            background-color: #f1ecec;
+            color: #000;
+            text-align: center;
+            /* padding-top: 10px; */
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #918888;
+            border: 0;
+        }
+
+        .btblack {
+            width: 50px;
+            margin: 5px 5px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            /* padding-top: 10px; */
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #918888;
+            border: 0;
+        }
+
+        .btred {
+            width: 50px;
+            margin: 5px 5px;
+            background-color: rgb(201, 12, 12);
+            color: #fff;
+            text-align: center;
+            /* padding-top: 10px; */
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #918888;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="background-color: rgb(226, 221, 215)">
+        <!-- <div > -->
+            <input type="text" class="display">
+        <!-- </div> -->
+        <div class="row2">
+            <button data-value="1" class="r2">1</button>
+            <button data-value="2" class="r2">2</button>
+            <button data-value="3" class="r2">3</button>
+            <button data-value="+" class="btblack">+</button>
+        </div>
+        <div class="row3">
+            <button data-value="4" class="r3">4</button>
+            <button data-value="5" class="r3">5</button>
+            <button data-value="6" class="r3">6</button>
+            <button data-value="-" class="btblack">-</button>
+        </div>
+        <div class="row4">
+            <button data-value="7" class="r4">7</button>
+            <button data-value="8" class="r4">8</button>
+            <button data-value="9" class="r4">9</button>
+            <button data-value="*" class="btblack">X</button>
+        </div>
+        <div class="row5">
+            <button data-value="C" class="btred">C</button>
+            <button data-value="0" class="r5">0</button>
+            <button data-value="=" class="btblack">=</button>
+            <button data-value="/" class="btblack">/</button>
+        </div>
+    </div>
+    <script src="script.js" ></script>
+</body>
+
+</html>
